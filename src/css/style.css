@@ -1,0 +1,82 @@
+body {
+  background-color: #121215;
+  color: #EAEAEA;
+  font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto Mono', monospace;
+    font-family: 'Space Grotesk', sans-serif;
+
+  display: grid;
+  grid-template-areas: "profile timeline";
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100vh;
+}
+
+#navegador {
+  padding: 64px;
+  grid-area: timeline;
+
+  overflow-y: scroll;
+}
+
+.memory {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  text-decoration: none;
+  margin-bottom: 64px;
+}
+
+.memory small {
+  color: #BEBEBF;
+  font-size: 12px;
+}
+
+.memory h1 {
+  font-size: 32px;
+  color: #EAEAEA;
+}
+
+.memory img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+
+.memory p {
+  font-size: 18px;
+  color: #BEBEBF;
+  line-height: 28px;
+}
+
+.profile {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid;
+  gap: 20px;
+
+  background-image: url("./images/background.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+aside img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+
+  border: 4px solid transparent;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc) padding-box,
+  linear-gradient(260deg,#d39e33,#ed5636,#633bbc) border-box; 
+}
+
+.profile p {
+  font-size: 32px;
+  text-align: center;
+}

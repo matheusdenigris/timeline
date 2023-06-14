@@ -1,3 +1,7 @@
+:root {
+  font-size: 16px;
+}
+
 body {
   background-color: #121215;
   color: #EAEAEA;
@@ -43,11 +47,11 @@ body {
 
 .memory small {
   color: #BEBEBF;
-  font-size: 12px;
+  font-size: 0.75rem;
 }
 
 .memory h1 {
-  font-size: 32px;
+  font-size: 2rem;
   color: #EAEAEA;
 }
 
@@ -60,7 +64,7 @@ body {
 
 
 .memory p {
-  font-size: 18px;
+  font-size: 1.2rem;
   color: #BEBEBF;
   line-height: 28px;
 }
@@ -76,7 +80,7 @@ body {
 
   background-image: url("./images/pet-background.jpg");
   background-position: top right;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: auto 100%;
 }
 
@@ -95,18 +99,32 @@ aside img {
 }
 
 .profile p {
-  font-size: 32px;
+  font-size: 2rem;
   text-align: center;
   color: #121215;
   text-shadow: 0 0 0.2em #F87, 0 0 0.2em #F87
 }
 
-@media (max-widht: 768px) {
+@media (max-width: 768px) {
+  :root {
+    font-size: 14px;
+  }
+
   body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 0.8fr;
     grid-template-areas: 
     "profile"
     "timeline";
+  }
+
+  #navegador {
+    border: none;
+    padding: 32px 12px;
+  }
+
+  nav {
+    overflow-y: visible;
+    padding: 22px;
   }
 }
